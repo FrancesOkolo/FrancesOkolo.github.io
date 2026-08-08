@@ -1,532 +1,288 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frances Okolo — Data Scientist, Analyst &amp; BI Developer</title>
+  <meta name="description" content="Frances Okolo turns complex data into clear, useful decisions through analytics, business intelligence, research and data storytelling.">
+  <meta name="theme-color" content="#111a22">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Frances Okolo — Data, made useful">
+  <meta property="og:description" content="Data science, business intelligence and research shaped into decisions people can act on.">
+  <meta property="og:url" content="https://francesokolo.github.io/fao.github.io/">
+  <meta property="og:image" content="https://francesokolo.github.io/fao.github.io/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Frances Okolo — Data, made useful">
+  <meta name="twitter:description" content="Data science, business intelligence and research shaped into decisions people can act on.">
+  <meta name="twitter:image" content="https://francesokolo.github.io/fao.github.io/og.png">
+  <link rel="canonical" href="https://francesokolo.github.io/fao.github.io/">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Newsreader:opsz,wght@6..72,500;6..72,600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
 
-<!--- basic page needs
-    ================================================== -->
-<meta charset="utf-8">
-<title>Frances Okolo</title>
-<meta name="description" content="">
-<meta name="author" content="">
-
-<!-- mobile specific metas
-    ================================================== -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- CSS
-    ================================================== -->
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/vendor.css">
-	
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5YGXG4GMDG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-5YGXG4GMDG');
-</script>
-
-<!-- script
-    ================================================== -->
-<script src="js/modernizr.js"></script>
-<script src="jQueryAssets/SpryDOMUtils.js"></script>
-<script src="index.js"></script>
-
-<!-- favicons
-    ================================================== -->
-<link rel="apple-touch-icon" sizes="180x180" href="https://github.com/FrancesOkolo/francesokolo.github.io/blob/main/Images/icons/icon-quote.svg.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://github.com/FrancesOkolo/francesokolo.github.io/blob/main/favicon-32x32.png.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://github.com/FrancesOkolo/francesokolo.github.io/blob/main/favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
-	
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YGXG4GMDG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5YGXG4GMDG');
+  </script>
 </head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<body id="top">
+  <header class="site-header" data-header>
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="Frances Okolo, home">
+        <span class="brand-mark" aria-hidden="true">FO</span>
+        <span class="brand-name">Frances Okolo</span>
+      </a>
 
-<!-- preloader
-    ================================================== -->
-<div id="preloader">
-  <div id="loader" class="dots-fade"> </div>
-</div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+        <span>Menu</span>
+        <span class="menu-lines" aria-hidden="true"><i></i><i></i></span>
+      </button>
 
-<!-- header
-    ================================================== -->
-<header class="s-header">
-  <div class="header-logo"> <a href="index.html"> <img src="images/logo.svg" alt="Frances Okolo"> </a> </div>
-  <div class="header-content">
-    <nav class="row header-nav-wrap">
-      <ul class="header-nav">
-        <li><a class="smoothscroll" href="#hero" title="Intro">Home</a></li>
-        <li><a class="smoothscroll" href="#about" title="About">About</a></li>
-        <li><a class="smoothscroll" href="#services" title="Services">Expertise</a></li>
-        <li><a class="smoothscroll" href="#portfolio" title="Works">Projects</a></li>
-        <li><a href="mailto:aweleokolo@gmail.com" title="Contact us">Say Hello</a></li>
-      </ul>
-    </nav>
-    <!-- end header-nav-wrap --> 
-    
-    <a href="" class="btn btn--stroke btn--small">Download CV</a> </div>
-  <!-- end header-content --> 
-  
-  <a class="header-menu-toggle" href="#0">Menu</a> </header>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-nav>
+        <a href="#work">Selected work</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#about">About</a>
+        <a class="nav-cta" href="mailto:aweleokolo@gmail.com">Let’s talk <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
 
-<!-- hero
-    ================================================== -->
-<section id="hero" class="s-hero target-section" data-parallax="scroll" data-image-src="images/hero-bg-3000.jpg" data-natural-width="3000" data-natural-height="2000" data-position-y="center">
-  <div class="row hero-content">
-    <div class="column large-full">
-      <h1> Hi, I'm Frances, <br>
-        a Data Scientist, Analyst, <br>
-        and BI Developer based in the UK. </h1>
-      <ul class="hero-social">
-        <li> <a href="https://twitter.com/frances_okolo" title="">Twitter</a> </li>
-        <li> <a href="https://www.linkedin.com/in/francesokolo/" title="">LinkedIn</a> </li>
-      </ul>
-      <!-- end hero-social --> 
-      
-    </div>
-  </div>
-  <!-- end hero-content -->
-  
-  <div class="hero-scroll"> <a href="#about" class="scroll-link smoothscroll">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-      <path d="M12 24l-8-9h6v-15h4v15h6z"/>
-    </svg>
-    </a> </div>
-  <!-- end hero-scroll --> 
-  
-</section>
-<!-- end s-hero --> 
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="shell hero-layout">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow"><span class="status-dot"></span> Data strategy · BI · Research</p>
+          <h1>I turn complex data into <em>clear decisions.</em></h1>
+          <p class="hero-intro">I’m Frances Okolo, a UK-based data scientist, analyst and BI developer. I shape evidence into useful products, compelling stories and action people can take.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="CV/Analytics%20CV%202023.pdf">View CV <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
 
-<!-- about
-    ================================================== -->
-<section id="about" class="s-about target-section">
-  <div class="s-about__section s-about__section--profile">
-    <div class="right-vert-line"></div>
-    <div class="row">
-      <div class="column large-6 medium-8 tab-full">
-        <div class="section-intro" data-num="01" data-aos="fade-up">
-          <h3 class="subhead">About Me</h3>
-          <h1 class="display-1">Empowering Data-Informed Decisions</h1>
-        </div>
-        <div class="profile-pic" data-aos="fade-up"> <img src="images/profile-pic.jpg" 
-                             srcset="images/profile-pic.jpg 1x, images/profile-pic@2x.jpg 2x" alt=""> </div>
-        <h3 data-aos="fade-up">Profile</h3>
-        <p data-aos="fade-up"> With a passion for problem-solving and data-informed insights, and years of  diverse industry experience, I'm excited to help businesses and organisations make informed decisions through data analysis and visualisation.</p>
-      </div>
-    </div>
-  </div>
-  <!-- end s-about__section--profile -->
-  
-  <div class="s-about__section">
-  <!--  <div class="row">
-      <div class="column">
-        <h3 data-aos="fade-up">Career</h3>
-      </div>
-    </div>
-    <div class="row block-large-1-2 block-900-full work-positions">
-      <div class="column" data-aos="fade-up">
-        <div class="position">
-          <div class="position__header">
-            <h6> <span class="position__co">BELLROCK group</span> <span class="position__pos">Business Intelligence Developer</span> </h6>
-            <div class="position__timeframe"> april 2021 - Present </div>
+        <div class="signal-board" data-reveal data-delay="1" aria-label="A visual summary of Frances's data process">
+          <div class="signal-board-top">
+            <span>Decision signal</span>
+            <span class="signal-live"><i></i> Live thinking</span>
           </div>
-          <p> - Developed and maintained custom business intelligence dashboards and reports using Tableau, leading to a 15% increase in data-driven decision making.&nbsp;</p>
-          <p>- Collaborated with cross-functional teams to identify key performance indicators and provide actionable insights to improve business processes</p>
-          <p>&nbsp;- Streamlined data collection and analysis processes, reducing data processing time by 25%</p>
-          <p>&nbsp;- Achievement: Awarded "Analyst of the Year" for exceptional contributions to the team and overall </p>
-        </div>
-      </div>-->
-      <!-- end column -->
-      <!--<div class="column" data-aos="fade-up">
-        <div class="position">
-          <div class="position__header">
-            <h6> <span class="position__co">Loughborough University</span> <span class="position__pos">Doctoral Researcher</span> </h6>
-            <div class="position__timeframe"> January 2020 - december 2023 </div>
+          <div class="signal-statement">
+            <span class="signal-number">01</span>
+            <p>Find the question hiding inside the data.</p>
           </div>
-          <p> - Conducted extensive research on digital transformation strategies in business archives and contributed to several peer</p>
-          <p>-Reviewed publications. - Presented research findings at various international conferences and industry events</p>
-          <p>&nbsp;- Collaborated with a team of researchers and faculty members to identify and develop best practices in digital transformation and information management.&nbsp;</p>
-          <p>- Achievement: Received a competitive research grant to further explore digital transformation in business archives. </p>
-        </div>
-      </div> -->
-      <!-- end column -->
-      <!-- <div class="column" data-aos="fade-up">
-        <div class="position">
-          <div class="position__header">
-            <h6> <span class="position__co">Ministry of Budget and Planning, Abuja, Nigeria</span> <span class="position__pos">Infrastructure Data Analyst</span> </h6>
-            <div class="position__timeframe"> April 2014 - september 2019 </div>
-          </div>
-          <p> - Developed data-driven models to optimise infrastructure investment and allocation across various regions, leading to a 10% increase in project efficiency</p>
-          <p>&nbsp;- Analysed large datasets to identify trends and provide recommendations for infrastructure planning and budget allocation</p>
-          <p>&nbsp;- Collaborated with stakeholders to communicate data insights and develop data-informed strategies</p>
-          <p>&nbsp;- Achievement: Recognised with an "Outstanding Performance" award for contributions to improved infrastructure planning. </p>
-        </div>
-      </div> -->
-      <!-- end column -->
-      <!--<div class="column" data-aos="fade-up">
-        <div class="position">
-          <div class="position__header">
-            <h6> <span class="position__co">Toyota Nigeria</span> <span class="position__pos">Business Insight Analyst</span> </h6>
-            <div class="position__timeframe"> January  2010 -march 2014 </div>
-          </div>
-          <p> - Leveraged data analysis and visualisation tools to generate actionable insights, contributing to a 12% increase in sales</p>
-          <p>&nbsp;- Conducted market research and competitive analysis to identify trends and opportunities for product development</p>
-          <p>&nbsp;- Collaborated with cross-functional teams to ensure alignment between business objectives and product features</p>
-          <p>&nbsp;- Achievement: Promoted to a senior role within the Business Intelligence team due to outstanding performance and leadership. </p>
-        </div>
-      </div>-->
-      <!-- end column --> 
-      
-    </div>
-    <!-- work positions --> 
-    
-  </div>
-  <!-- end s-about__section --> 
-  
-</section>
-<!-- end s-about --> 
-
-<!-- services
-    ================================================== -->
-<section id="services" class="s-services target-section h-dark-bg">
-  <div class="row s-services__content">
-    <div class="vert-line"></div>
-    <div class="column large-6 s-services__leftcol">
-      <div class="section-intro" data-num="02" data-aos="fade-up">
-        <h3 class="subhead">Expertise</h3>
-        <h1 class="display-1"> Harnessing the Power of Data Analytics, Visualisation & Impactful Design.</h1>
-      </div>
-      <p class="lead" data-aos="fade-up"> As a data-informed professional, I specialise in transforming complex datasets into actionable insights that drive informed decision-making. Utilising advanced analytics and visualisation techniques, I create clear, engaging, and impactful designs that help businesses and organisations understand and leverage their data. With a keen eye for detail and a strong commitment to delivering high-quality work, I strive to exceed expectations and deliver exceptional results that truly make a difference. </p>
-    </div>
-    <!-- end  s-services--leftcol -->
-    
-    <div class="column large-6">
-      <ul class="services-list" data-aos="fade-up">
-        <li class="services-list__item is-active">
-          <div class="services-list__item-header">
-            <h5>BI Product Design</h5>
-          </div>
-          <div class="services-list__item-body">
-            <p> I specialise in designing and developing Business Intelligence (BI) products that turn raw data into meaningful insights. My BI product designs focus on usability, functionality, and aesthetics, ensuring that users can quickly and easily understand complex data and derive actionable insights. </p>
-            <p> <b>Recent Projects</b>
-            <ul>
-              <li>BI dashboards Project for major facilities management company: comprehensive solution to streamline job order processes.</li>
-            </ul>
-            <b>Volunteer Projects</b>
-            <ul>
-              <li><a href= "https://www.vizforsocialgood.com/join-a-project/who-2023"> World Health Organisation:</a> Disability Inclusion Report - 2023</li>
-              <li><a href= "https://public.tableau.com/app/profile/frances.okolo/viz/VizForSocialGood_16410875009550/HomePage"> Viz for Social Good:</a> Poll 2021 Report</li>
-              <li><a href= "https://public.tableau.com/app/profile/frances.okolo/viz/TheImpactofCrowd2MapinRuralTanzania/Crowd2Map"> Crowd2Map: </a> Impact Report for Rural Tanzania</li>
-              <li><a href= "https://public.tableau.com/app/profile/frances.okolo/viz/FondationFollereau2021/FFL"> Fondation Follereau Luxembourg (FFL): </a> 2021 Performance Report</li>
-            </ul>
-            </p>
-          </div>
-        </li>
-        <!-- services-list__item -->
-        <li class="services-list__item">
-          <div class="services-list__item-header">
-            <h5>Data Modelling&nbsp;</h5>
-          </div>
-          <div class="services-list__item-body">
-            <p> Leveraging analytical skills and a deep understanding of data structures, I create robust data models that effectively represent complex business scenarios. My experience in designing and implementing database systems ensures that these models are efficient, scalable, and easy to maintain. From conceptual design to physical implementation, my data modelling expertise helps organisations transform raw data into valuable insights. </p>
-            <p> <b>Recent Projects</b>
-            <ul>
-              <li>Database design for a retail company: improved inventory management and sales forecasting.</li>
-            </ul>
-            <b>Volunteer Projects</b>
-            <ul>
-              <li><a href="https://www.datakind.org/projects">DataKind:</a> Data modeling for a non-profit organisation focused on education.</li>
-            </ul>
-            </p>
-          </div>
-        </li>
-        <!-- services-list__item -->
-        <li class="services-list__item">
-          <div class="services-list__item-header">
-            <h5>Clustering</h5>
-          </div>
-          <div class="services-list__item-body">
-            <p> As an expert in clustering techniques, I utilise advanced algorithms to identify patterns and groupings within complex datasets. My experience in machine learning and data mining enables me to select and implement the most appropriate clustering methods based on the specific needs and characteristics of the data. By uncovering hidden structures and relationships, I help businesses and organisations discover meaningful insights and improve their decision-making processes. Through clustering analysis, I aim to enhance the understanding of data and reveal valuable opportunities for growth and optimisation. </p>
-            <p> <b>Recent Projects</b>
-            <ul>
-              <li>Customer segmentation for an e-commerce company: improved marketing strategies and customer targeting.</li>
-            </ul>
-            <b>Volunteer Projects</b>
-            <ul>
-              <li><a href="https://www.data4good.com/projects">Data4Good:</a> Clustering analysis for a healthcare organisation to optimise resource allocation.</li>
-            </ul>
-            </p>
-          </div>
-        </li>
-        <!-- services-list__item -->
-        <li class="services-list__item">
-          <div class="services-list__item-header">
-            <h5>Classification</h5>
-          </div>
-          <div class="services-list__item-body">
-            <p> Using advanced machine learning techniques, I develop classification models to categorise data into distinct groups, helping organisations derive actionable insights from their data. My approach to classification includes careful feature selection, model evaluation, and optimisation to ensure high accuracy and performance. By applying classification methods to a wide range of use cases, I support decision-making processes and facilitate informed, data-driven decisions. </p>
-            <p> <b>Recent Projects</b>
-            <ul>
-              <li>Spam detection system for an email service provider: reduced spam emails and improved user experience.</li>
-            </ul>
-            <b>Volunteer Projects</b>
-            <ul>
-              <li><a href="https://www.drivendata.org/competitions">DrivenData:</a> Classification model for a non-profit organisation to predict donor behavior.</li>
-            </ul>
-            </p>
-          </div>
-        </li>
-        <!-- services-list__item -->
-        <li class="services-list__item">
-          <div class="services-list__item-header">
-            <h5>Regression</h5>
-          </div>
-          <div class="services-list__item-body">
-            <p> Leveraging regression techniques, I build predictive models to analyse relationships between variables and forecast trends for organisations. By utilising both linear and non-linear regression models, I aim to uncover hidden patterns and insights within the data. I meticulously fine-tune these models to ensure they are robust and reliable, providing businesses with accurate predictions for informed decision-making and improved strategic planning.. </p>
-            <p> <b>Recent Projects</b>
-            <ul>
-              <li>Revenue forecasting for a retail company: enabled proactive decision-making and resource allocation.</li>
-            </ul>
-            <b>Volunteer Projects</b>
-            <ul>
-              <li><a href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques">Kaggle:</a> House Prices Prediction using Advanced Regression Techniques.</li>
-            </ul>
-            </p>
-          </div>
-        </li>
-        <!-- services-list__item -->
-        <li class="services-list__item">
-          <div class="services-list__item-header">
-            <h5>Digital Transformation Research</h5>
-          </div>
-          <div class="services-list__item-body">
-            <p> As a digital transformation researcher, I explore the latest technological advancements and trends to help businesses stay competitive and adapt to the constantly evolving digital landscape. By analysing market developments, emerging technologies, and industry best practices, I provide actionable insights that enable organisations to optimise their operations, enhance customer experiences, and drive innovation. My research aims to empower businesses to make informed decisions and successfully navigate their digital transformation journey. </p>
-          </div>
-        </li>
-        <!-- services-list__item -->
-      </ul>
-      <!-- end services-list --> 
-    </div>
-  </div>
-  <!-- s-services__content --> 
-  
-</section>
-<!-- end s-services --> 
-
-<!-- portfolio
-    ================================================== -->
-<section id="portfolio" class="s-portfolio target-section">
-  <div class="row s-portfolio__header">
-    <div class="column large-6 medium-8 tab-full">
-      <div class="section-intro" data-num="03" data-aos="fade-up">
-        <h3 class="subhead">projects</h3>
-        <h1 class="display-1"> A selection of recent projects I have worked on. </h1>
-      </div>
-    </div>
-  </div>
-  <!-- s-porfolio__header -->
-  <div class="row s-porfolio__list block-large-1-2 block-tab-full collapse">
-    <div class="column" data-aos="fade-up">
-      <div class="folio-item">
-        <div class="folio-item__thumb"> <a class="folio-item__thumb-link" href="images/portfolio/gallery/" title="Windows in The City" data-size="1050x700"> <img src="images/portfolio/windows-in-the-city.jpg" 
-                                 srcset="images/portfolio/windows-in-the-city.jpg 1x, images/portfolio/windows-in-the-city@2x.jpg 2x" alt=""> </a> </div>
-        <div class="folio-item__info">
-          <div class="folio-item__cat">Volunteer</div>
-          <h4 class="folio-item__title">Crowd2Map</h4>
-        </div>
-        <a href="https://public.tableau.com/app/profile/frances.okolo/viz/TheImpactofCrowd2MapinRuralTanzania/Crowd2Map" title="Project Link" class="folio-item__project-link">Project Link</a>
-        <div class="folio-item__caption">
-          <p>As a volunteer for Crowd2Map, I developed an impact report for rural Tanzania, showcasing the positive effects of the organisation's efforts to map previously unmapped areas. By creating a data visualisation, I highlighted the critical role that Crowd2Map plays in improving access to vital resources and services, such as healthcare and education. My work contributed to raising awareness and support for the project's mission to empower local communities through mapping and geospatial data. </p>
-        </div>
-      </div>
-    </div>
-    <!-- end column -->
-    <div class="column" data-aos="fade-up">
-      <div class="folio-item">
-        <div class="folio-item__thumb"> <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-shout-jump.jpg" Title="Shout and Jump" data-size="1050x700"> <img src="images/portfolio/shout-and-jump.jpg" 
-                                 srcset="images/portfolio/shout-and-jump.jpg 1x, images/portfolio/shout-and-jump@2x.jpg 2x" alt=""> </a> </div>
-        <div class="folio-item__info">
-          <div class="folio-item__cat">Volunteer</div>
-          <h4 class="folio-item__title">Fondation Follereau(FFL)</h4>
-        </div>
-        <a href="https://public.tableau.com/app/profile/frances.okolo/viz/FondationFollereau2021/FFL" title="Project Link" class="folio-item__project-link">Project Link</a>
-        <div class="folio-item__caption">
-          <p>I collaborated with the Fondation Follereau Luxembourg (FFL) to create an interactive BI dashboard, showcasing the organisation's 2021 performance in combating neglected tropical diseases. The dashboard provided valuable insights into the reach and impact of FFL's projects, enabling data-driven decision-making and improved strategic planning.</p>
-        </div>
-      </div>
-    </div>
-    <!-- end column -->
-    <div class="column" data-aos="fade-up">
-      <div class="folio-item">
-        <div class="folio-item__thumb"> 
-          <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-sand-dunes.jpg" title="Sand Dunes" data-size="1050x700"> <img src="images/portfolio/sand-dunes.jpg" 
-                                 srcset="images/portfolio/sand-dunes.jpg 1x, images/portfolio/sand-dunes@2x.jpg 2x" alt=""> </a> </div>
-        <div class="folio-item__info">
-          <div class="folio-item__cat">Frontend Design</div>
-          <h4 class="folio-item__title">Sand Dunes</h4>
-        </div>
-        <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
-        <div class="folio-item__caption">
-          <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-        </div>
-      </div>
-    </div>
-    <!-- end column -->
-    <div class="column" data-aos="fade-up">
-      <div class="folio-item">
-        <div class="folio-item__thumb"> <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-building-blocks.jpg" title="Building Blocks" data-size="1050x700"> <img src="images/portfolio/building-blocks.jpg" 
-                                 srcset="images/portfolio/building-blocks.jpg 1x, images/portfolio/building-blocks@2x.jpg 2x" alt=""> </a> </div>
-        <div class="folio-item__info">
-          <div class="folio-item__cat">Volunteer</div>
-          <h4 class="folio-item__title">Viz for Social Good</h4>
-        </div>
-        <a href="https://public.tableau.com/app/profile/frances.okolo/viz/VizForSocialGood_16410875009550/HomePage" title="Project Link" class="folio-item__project-link">Project Link</a>
-        <div class="folio-item__caption">
-          <p>As a volunteer with Viz for Social Good, I created a compelling and informative visualisation for the Poll 2021 Report. The project aimed to communicate key insights and trends from the data, enabling stakeholders and the public to better understand the report's findings. My work contributed to the organisation's mission of using data visualisation for positive social impact.</p>
-        </div>
-      </div>
-    </div>
-    <!-- end column -->
-    
-</div>
-  <!-- folio-list -->
-</section>
-<!-- end portfolio -->
-<!-- testimonials
-    ================================================== -->
-<section id="testimonials" class="s-testimonials">
-  <div class="row collapse">
-    <div class="column large-full">
-      <div class="testimonial-slider" data-aos="fade-up">
-        <div class="testimonial-slider__slide">
-          <p> Frances has demonstrated exceptional analytical skills and a keen eye for detail throughout our collaboration. Her ability to synthesise complex data into actionable insights has greatly contributed to the success of our projects. </p>
-          <div class="testimonial-slider__author"> <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonial-slider__avatar"> <cite class="testimonial-slider__cite"> <strong>Tim Cook</strong> CEO, Apple </cite> </div>
-        </div>
-        <!-- end testimonials__slide -->
-        <div class="testimonial-slider__slide">
-          <p> Frances delivered an outstanding BI dashboard that has revolutionised the way we approach data analysis in our organisation. Her meticulous attention to detail and innovative design solutions have enabled us to quickly and effectively visualise critical data. </p>
-          <div class="testimonial-slider__author"> <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonial-slider__avatar"> <cite class="testimonial-slider__cite"> <strong>Sundar Pichai</strong> CEO, Google </cite> </div>
-        </div>
-        <!-- end testimonials__slide -->
-        <div class="testimonial-slider__slide">
-          <p> Frances' expertise in data modeling and analytics has been a game-changer for our organisation. Frances' professionalism and commitment to delivering quality results have made her an invaluable asset to our team. </p>
-          <div class="testimonial-slider__author"> <img src="images/avatars/user-04.jpg" alt="Author image" class="testimonial-slider__avatar"> <cite class="testimonial-slider__cite"> <strong>Satya Nadella</strong> CEO, Microsoft </cite> </div>
-        </div>
-        <!-- end testimonials__slide -->
-        <div class="testimonial-slider__slide">
-          <p> Frances played a key role in our digital transformation journey by conducting in-depth research and providing valuable insights. Her ability to analyse data and identify trends has helped us stay ahead of the competition and adapt to the ever-changing landscape. We appreciate her dedication to delivering top-notch results and her collaborative approach to working with our team. </p>
-          <div class="testimonial-slider__author"> <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonial-slider__avatar"> <cite class="testimonial-slider__cite"> <strong>Jeff Bezos</strong> CEO, Amazon </cite> </div>
-        </div>
-        <!-- end testimonials__slide -->
-      </div>
-      <!-- end testimonial slider -->
-    </div>
-    <!-- end column -->
-  </div>
-  <!-- end row -->
-</section>
-<!-- end s-testimonials --> 
-
-<!-- footer
-    ================================================== -->
-<footer class="s-footer h-dark-bg">
-  <div class="right-vert-line"></div>
-  <div class="row s-footer__main">
-    <div class="column large-6">
-      <div class="section-intro" data-aos="fade-up">
-        <h3 class="subhead">Get In Touch</h3>
-        <h1 class="display-1"> Have an idea or a concept that really excite you?
-          Let's turn that idea into reality. Shoot me a message. </h1>
-      </div>
-      <div class="footer-email-us"> <a href="mailto:#0" class="btn btn--primary h-full-width">Let's Talk</a> </div>
-    </div>
-    <div class="column large-5">
-      <div class="footer-contacts">
-        <div class="footer-contact-block" data-aos="fade-up">
-          <h5 class="footer-contact-block__header"> Email </h5>
-          <p class="footer-contact-block__content"> <a href="mailto:#0">aweleokolo@gmail.com</a> </p>
-        </div>
-        <!-- end footer-contact-block --> 
-        
-        <br>
-        <div class="footer-contact-block" data-aos="fade-up">
-          <h5 class="footer-contact-block__header"> Social </h5>
-          <ul class="footer-contact-block__list">
-            <li><a href="https://twitter.com/frances_okolo">Twitter</a></li>
-            <li><a href="https://www.linkedin.com/in/francesokolo/">LinkedIn</a></li>
-          </ul>
-        </div>
-        <!-- end footer-contact-block --> 
-      </div>
-    </div>
-  </div>
-  <!-- end s-footer__main -->
-  
-  <div class="row s-footer__bottom">
-    <div class="column large-full ss-copyright"> © Copyright Ethos 2019 Design by <a href="https://www.styleshout.com/">StyleShout</a></div>
-    <!-- end ss-copyright -->
-    
-    <div class="ss-go-top"> <a class="smoothscroll" title="Back to Top" href="#top">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M12 0l8 9h-6v15h-4v-15h-6z"/>
-      </svg>
-      </a> </div>
-    <!-- end ss-go-top --> 
-  </div>
-  <!-- end s-footer__bottom --> 
-  
-</footer>
-<!-- end s-footer --> 
-
-<!-- photoswipe background
-    ================================================== -->
-<div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-  <div class="pswp__bg"></div>
-  <div class="pswp__scroll-wrap">
-    <div class="pswp__container">
-      <div class="pswp__item"></div>
-      <div class="pswp__item"></div>
-      <div class="pswp__item"></div>
-    </div>
-    <div class="pswp__ui pswp__ui--hidden">
-      <div class="pswp__top-bar">
-        <div class="pswp__counter"></div>
-        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-        <button class="pswp__button pswp__button--share" title=
-                    "Share"></button>
-        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-        <button class="pswp__button pswp__button--zoom" title=
-                    "Zoom in/out"></button>
-        <div class="pswp__preloader">
-          <div class="pswp__preloader__icn">
-            <div class="pswp__preloader__cut">
-              <div class="pswp__preloader__donut"></div>
+          <div class="signal-chart" aria-hidden="true">
+            <div class="chart-copy">
+              <span>Clarity index</span>
+              <strong>Insight → action</strong>
+            </div>
+            <div class="bars">
+              <i style="--h: 28%"></i>
+              <i style="--h: 43%"></i>
+              <i style="--h: 37%"></i>
+              <i style="--h: 58%"></i>
+              <i style="--h: 72%"></i>
+              <i style="--h: 66%"></i>
+              <i style="--h: 88%"></i>
             </div>
           </div>
+          <div class="signal-footer">
+            <div class="signal-orbit" aria-hidden="true"><span></span></div>
+            <p><strong>Useful by design.</strong><br>Rigorous enough to trust.<br>Clear enough to use.</p>
+          </div>
         </div>
       </div>
-      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-        <div class="pswp__share-tooltip"></div>
-      </div>
-      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-      <button class="pswp__button pswp__button--arrow--right" title=
-                "Next (arrow right)"></button>
-      <div class="pswp__caption">
-        <div class="pswp__caption__center"></div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- end photoSwipe background --> 
 
-<!-- Java Script
-    ================================================== -->
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+      <div class="shell hero-rail" data-reveal data-delay="2">
+        <span>Tableau</span>
+        <span>Data modelling</span>
+        <span>Analytics</span>
+        <span>Visual storytelling</span>
+        <span>Digital transformation</span>
+      </div>
+    </section>
+
+    <section class="section work" id="work">
+      <div class="shell">
+        <div class="section-heading" data-reveal>
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2>Evidence with a point of view.</h2>
+          </div>
+          <p>Projects that translate social-impact, operational and public-interest data into narratives people can understand and use.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-card-featured" data-reveal>
+            <div class="project-art art-map" aria-hidden="true">
+              <div class="map-grid"></div>
+              <span class="map-dot dot-one"></span>
+              <span class="map-dot dot-two"></span>
+              <span class="map-dot dot-three"></span>
+              <span class="map-path path-one"></span>
+              <span class="map-path path-two"></span>
+              <div class="art-label"><small>Rural Tanzania</small><strong>Mapping impact</strong></div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta"><span>01 · Geospatial impact</span><span>Tableau</span></div>
+              <h3>Crowd2Map</h3>
+              <p>An impact report showing how community mapping can improve visibility and access to essential services in rural Tanzania.</p>
+              <a class="project-link" href="https://public.tableau.com/app/profile/frances.okolo/viz/TheImpactofCrowd2MapinRuralTanzania/Crowd2Map" target="_blank" rel="noopener">View project <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal data-delay="1">
+            <div class="project-art art-health" aria-hidden="true">
+              <div class="health-ring"><span>2021</span></div>
+              <div class="health-metrics">
+                <i></i><i></i><i></i><i></i>
+              </div>
+              <div class="art-label"><small>Programme performance</small><strong>Health outcomes</strong></div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta"><span>02 · Health data</span><span>BI dashboard</span></div>
+              <h3>Fondation Follereau</h3>
+              <p>An interactive performance view designed to make the reach of neglected tropical disease programmes easier to explore.</p>
+              <a class="project-link" href="https://public.tableau.com/app/profile/frances.okolo/viz/FondationFollereau2021/FFL" target="_blank" rel="noopener">View project <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-art art-poll" aria-hidden="true">
+              <div class="poll-bars"><i></i><i></i><i></i><i></i><i></i></div>
+              <span class="poll-note note-a">listen</span>
+              <span class="poll-note note-b">compare</span>
+              <div class="art-label"><small>Public sentiment</small><strong>Patterns in opinion</strong></div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta"><span>03 · Social impact</span><span>Data story</span></div>
+              <h3>Viz for Social Good</h3>
+              <p>A visual narrative that surfaces key patterns in the Poll 2021 report without losing the human context behind the numbers.</p>
+              <a class="project-link" href="https://public.tableau.com/app/profile/frances.okolo/viz/VizForSocialGood_16410875009550/HomePage" target="_blank" rel="noopener">View project <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card project-card-ink" data-reveal data-delay="1">
+            <div class="project-art art-privacy" aria-hidden="true">
+              <div class="privacy-field">
+                <span>NAME</span><span>•••••••</span>
+                <span>EMAIL</span><span>••••@••••</span>
+                <span>ID</span><span>••••••••</span>
+              </div>
+              <div class="privacy-key">Protected</div>
+              <div class="art-label"><small>Responsible data</small><strong>Privacy by design</strong></div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta"><span>04 · Data privacy</span><span>Open source</span></div>
+              <h3>Data Anonymiser</h3>
+              <p>A practical tool for obscuring sensitive information while preserving the structure needed for safer analysis and testing.</p>
+              <a class="project-link" href="https://github.com/FrancesOkolo/Data-Anonymiser" target="_blank" rel="noopener">View repository <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+
+        <a class="wide-link" href="https://public.tableau.com/app/profile/frances.okolo" target="_blank" rel="noopener" data-reveal>
+          <span>Explore the full Tableau portfolio</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section expertise" id="expertise">
+      <div class="shell expertise-layout">
+        <div class="expertise-intro" data-reveal>
+          <p class="eyebrow">Expertise</p>
+          <h2>From a fuzzy question to a useful answer.</h2>
+          <p>I work across analysis, product thinking and communication—because a technically correct answer only matters when people can act on it.</p>
+        </div>
+
+        <div class="capability-list">
+          <article class="capability" data-reveal>
+            <span class="capability-number">01</span>
+            <div><h3>BI product design</h3><p>Dashboards and reporting experiences shaped around real decisions, not just available metrics.</p></div>
+            <span class="capability-mark" aria-hidden="true">↗</span>
+          </article>
+          <article class="capability" data-reveal>
+            <span class="capability-number">02</span>
+            <div><h3>Applied analytics</h3><p>Classification, clustering and regression used with context, restraint and a clear business question.</p></div>
+            <span class="capability-mark" aria-hidden="true">↗</span>
+          </article>
+          <article class="capability" data-reveal>
+            <span class="capability-number">03</span>
+            <div><h3>Data modelling</h3><p>Structures that turn fragmented information into dependable, scalable foundations for analysis.</p></div>
+            <span class="capability-mark" aria-hidden="true">↗</span>
+          </article>
+          <article class="capability" data-reveal>
+            <span class="capability-number">04</span>
+            <div><h3>Digital transformation research</h3><p>Evidence-led research into how technology, information and organisations change together.</p></div>
+            <span class="capability-mark" aria-hidden="true">↗</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="shell about-layout">
+        <div class="about-visual" data-reveal aria-hidden="true">
+          <div class="about-orbit orbit-large"></div>
+          <div class="about-orbit orbit-small"></div>
+          <div class="about-core"><span>DATA</span><strong>with<br>purpose</strong></div>
+          <span class="orbit-label label-research">Research</span>
+          <span class="orbit-label label-design">Design</span>
+          <span class="orbit-label label-business">Business</span>
+        </div>
+
+        <div class="about-copy" data-reveal data-delay="1">
+          <p class="eyebrow">About Frances</p>
+          <h2>Curious by nature.<br>Rigorous by practice.</h2>
+          <p class="about-lead">My work sits where data, people and organisational change meet.</p>
+          <p>With experience spanning business intelligence, data analysis and doctoral research, I bring analytical depth and a strong visual instinct to complex problems. I care about the last mile of data work: making the answer understandable, responsible and genuinely useful.</p>
+          <div class="about-facts">
+            <div><span>Based</span><strong>United Kingdom</strong></div>
+            <div><span>Focus</span><strong>Insight &amp; impact</strong></div>
+            <div><span>Approach</span><strong>Evidence-led</strong></div>
+          </div>
+          <a class="text-link" href="https://www.linkedin.com/in/francesokolo/" target="_blank" rel="noopener">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-grid" aria-hidden="true"></div>
+      <div class="shell contact-inner" data-reveal>
+        <p class="eyebrow">Start a conversation</p>
+        <h2>Have a question hiding<br>inside your data?</h2>
+        <p>Let’s find it—and turn the answer into something your team can use.</p>
+        <a class="button button-light" href="mailto:aweleokolo@gmail.com">aweleokolo@gmail.com <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <span class="brand-mark brand-mark-dark" aria-hidden="true">FO</span>
+        <span class="brand-name">Frances Okolo</span>
+      </a>
+      <p>Data scientist · Analyst · BI developer</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/francesokolo/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/FrancesOkolo" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:aweleokolo@gmail.com">Email</a>
+      </div>
+      <p class="copyright">© <span data-year></span> Frances Okolo</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
