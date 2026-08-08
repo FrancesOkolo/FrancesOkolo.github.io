@@ -379,6 +379,19 @@ button { font: inherit; }
 .capability:hover .capability-mark { color: var(--ink); background: var(--lime); transform: rotate(45deg); }
 
 .experience { background: var(--white); }
+.nhs-role-panel { margin-bottom: 24px; padding: clamp(30px, 5vw, 58px); color: var(--white); background: var(--teal); }
+.nhs-role-heading { display: flex; justify-content: space-between; gap: 36px; align-items: start; }
+.nhs-role-heading .panel-kicker { margin-bottom: 24px; color: var(--lime); }
+.nhs-role-heading h3 { margin: 0; font-family: var(--serif); font-size: clamp(46px, 5.5vw, 72px); font-weight: 500; line-height: .95; letter-spacing: -.045em; }
+.nhs-role-org { margin: 15px 0 0; color: rgba(255,255,255,.72); font-size: 16px; }
+.nhs-role-heading > span { flex: 0 0 auto; padding: 7px 12px; color: var(--ink); background: var(--lime); font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.nhs-role-summary { max-width: 760px; margin: 34px 0 38px; color: rgba(255,255,255,.78); font-size: 18px; }
+.nhs-role-highlights { margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); list-style: none; border-top: 1px solid rgba(255,255,255,.25); }
+.nhs-role-highlights li { padding: 28px 28px 0 0; }
+.nhs-role-highlights li + li { padding-left: 28px; border-left: 1px solid rgba(255,255,255,.2); }
+.nhs-role-highlights span { display: block; margin-bottom: 26px; color: var(--lime); font-size: 10px; font-weight: 700; letter-spacing: .12em; }
+.nhs-role-highlights strong { display: block; font-family: var(--serif); font-size: 25px; font-weight: 500; line-height: 1.08; }
+.nhs-role-highlights p { margin: 12px 0 0; color: rgba(255,255,255,.65); font-size: 14px; }
 .experience-grid { display: grid; grid-template-columns: 1.14fr .86fr; gap: 24px; }
 .career-panel, .education-panel { padding: clamp(28px, 4vw, 48px); border: 1px solid var(--line); }
 .career-panel { color: var(--white); background: var(--ink); }
@@ -471,7 +484,10 @@ button { font: inherit; }
   .site-nav > a:not(.nav-cta)::after { display: none; }
   .nav-cta { margin-top: 18px; justify-content: space-between; font-family: var(--sans) !important; font-size: 14px !important; border: 1px solid var(--ink) !important; padding: 14px 16px !important; }
   .hero { min-height: auto; padding-top: 140px; }
-  .hero-layout, .section-heading, .expertise-layout, .experience-grid, .healthcare-spotlight, .about-layout { grid-template-columns: 1fr; }
+  .hero-layout, .section-heading, .expertise-layout, .experience-grid, .nhs-role-highlights, .healthcare-spotlight, .about-layout { grid-template-columns: 1fr; }
+  .nhs-role-highlights li { padding: 24px 0; }
+  .nhs-role-highlights li + li { padding-left: 0; border-top: 1px solid rgba(255,255,255,.2); border-left: 0; }
+  .nhs-role-highlights span { margin-bottom: 14px; }
   .hero-layout { gap: 82px; }
   .signal-board { width: min(100%, 560px); justify-self: center; }
   .hero-rail { flex-wrap: wrap; justify-content: flex-start; }
@@ -506,7 +522,10 @@ button { font: inherit; }
   .project-content h3 { margin-top: 32px; }
   .capability { grid-template-columns: 30px 1fr; gap: 14px; }
   .capability-mark { display: none; }
-  .career-panel, .education-panel, .healthcare-spotlight { padding: 28px 22px; }
+  .nhs-role-panel, .career-panel, .education-panel, .healthcare-spotlight { padding: 28px 22px; }
+  .nhs-role-heading { display: block; }
+  .nhs-role-heading > span { display: inline-block; margin-top: 20px; }
+  .nhs-role-summary { font-size: 16px; }
   .role-heading { display: block; }
   .role-heading > span { display: inline-block; margin-top: 18px; }
   .impact-list li { grid-template-columns: 78px 1fr; }
