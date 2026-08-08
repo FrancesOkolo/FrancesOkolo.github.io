@@ -378,6 +378,41 @@ button { font: inherit; }
 .capability-mark { width: 34px; height: 34px; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.25); border-radius: 50%; transition: color 180ms ease, background 180ms ease, transform 180ms ease; }
 .capability:hover .capability-mark { color: var(--ink); background: var(--lime); transform: rotate(45deg); }
 
+.experience { background: var(--white); }
+.experience-grid { display: grid; grid-template-columns: 1.14fr .86fr; gap: 24px; }
+.career-panel, .education-panel { padding: clamp(28px, 4vw, 48px); border: 1px solid var(--line); }
+.career-panel { color: var(--white); background: var(--ink); }
+.education-panel { background: var(--paper); }
+.panel-kicker { margin: 0 0 30px; font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.career-panel .panel-kicker { color: var(--lime); }
+.education-panel .panel-kicker { color: var(--teal); }
+.role-heading { display: flex; justify-content: space-between; gap: 28px; align-items: start; padding-bottom: 28px; border-bottom: 1px solid rgba(255,255,255,.17); }
+.role-heading h3, .healthcare-copy h3 { margin: 0; font-family: var(--serif); font-size: clamp(38px, 4.3vw, 58px); font-weight: 500; line-height: .98; letter-spacing: -.045em; }
+.role-heading p { margin: 12px 0 0; color: rgba(255,255,255,.62); }
+.role-heading > span { flex: 0 0 auto; padding: 6px 10px; color: var(--ink); background: var(--lime); font-size: 9px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.role-summary { max-width: 650px; margin: 28px 0; color: rgba(255,255,255,.68); font-size: 17px; }
+.impact-list { margin: 0; padding: 0; list-style: none; }
+.impact-list li { padding: 18px 0; display: grid; grid-template-columns: 92px 1fr; gap: 18px; border-top: 1px solid rgba(255,255,255,.13); }
+.impact-list strong { color: var(--lime); font-family: var(--serif); font-size: 22px; font-weight: 500; }
+.impact-list span { color: rgba(255,255,255,.72); font-size: 14px; }
+.education-list { margin: 0; padding: 0; list-style: none; }
+.education-list li { padding: 21px 0; border-top: 1px solid var(--line); }
+.education-list li:last-child { border-bottom: 1px solid var(--line); }
+.education-list span, .education-list small { display: block; color: rgba(17,26,34,.52); font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.education-list strong { display: block; margin: 6px 0 7px; font-family: var(--serif); font-size: 24px; font-weight: 500; line-height: 1.08; }
+.education-list small { line-height: 1.45; }
+.healthcare-spotlight { margin-top: 24px; padding: clamp(30px, 5vw, 58px); display: grid; grid-template-columns: .86fr 1.14fr; gap: clamp(44px, 7vw, 100px); color: var(--white); background: var(--teal); }
+.healthcare-copy .panel-kicker { color: var(--lime); }
+.healthcare-copy > p:last-child { max-width: 510px; margin: 28px 0 0; color: rgba(255,255,255,.72); }
+.health-project-list { align-self: center; }
+.health-project-list a { padding: 25px 0; display: grid; grid-template-columns: 34px 1fr auto; gap: 18px; align-items: center; border-top: 1px solid rgba(255,255,255,.25); transition: padding 180ms ease, background 180ms ease; }
+.health-project-list a:last-child { border-bottom: 1px solid rgba(255,255,255,.25); }
+.health-project-list a:hover { padding-inline: 14px; background: rgba(255,255,255,.08); }
+.health-project-list > a > span { color: var(--lime); font-size: 10px; font-weight: 700; }
+.health-project-list strong { display: block; font-family: var(--serif); font-size: clamp(22px, 2.4vw, 30px); font-weight: 500; line-height: 1.05; }
+.health-project-list small { display: block; margin-top: 7px; color: rgba(255,255,255,.62); font-size: 11px; }
+.health-project-list i { width: 34px; height: 34px; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.32); border-radius: 50%; font-style: normal; }
+
 .about { background: var(--paper-deep); }
 .about-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(60px, 10vw, 150px); align-items: center; }
 .about-visual { position: relative; min-height: 590px; display: grid; place-items: center; }
@@ -436,7 +471,7 @@ button { font: inherit; }
   .site-nav > a:not(.nav-cta)::after { display: none; }
   .nav-cta { margin-top: 18px; justify-content: space-between; font-family: var(--sans) !important; font-size: 14px !important; border: 1px solid var(--ink) !important; padding: 14px 16px !important; }
   .hero { min-height: auto; padding-top: 140px; }
-  .hero-layout, .section-heading, .expertise-layout, .about-layout { grid-template-columns: 1fr; }
+  .hero-layout, .section-heading, .expertise-layout, .experience-grid, .healthcare-spotlight, .about-layout { grid-template-columns: 1fr; }
   .hero-layout { gap: 82px; }
   .signal-board { width: min(100%, 560px); justify-self: center; }
   .hero-rail { flex-wrap: wrap; justify-content: flex-start; }
@@ -471,6 +506,12 @@ button { font: inherit; }
   .project-content h3 { margin-top: 32px; }
   .capability { grid-template-columns: 30px 1fr; gap: 14px; }
   .capability-mark { display: none; }
+  .career-panel, .education-panel, .healthcare-spotlight { padding: 28px 22px; }
+  .role-heading { display: block; }
+  .role-heading > span { display: inline-block; margin-top: 18px; }
+  .impact-list li { grid-template-columns: 78px 1fr; }
+  .health-project-list a { grid-template-columns: 26px 1fr; }
+  .health-project-list i { display: none; }
   .about-visual { min-height: 420px; }
   .orbit-large { width: 390px; max-width: 110%; }
   .about-core { width: 145px; height: 145px; }
